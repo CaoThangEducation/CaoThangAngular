@@ -10,7 +10,7 @@ const path = require("path");
 const ioServer = require("socket.io");
 
 const MONGODB_URI =
-  "mongodb://ai_noi_mongo_die:khongthechetduoc@103.92.26.177:27017/devAngular?retryWrites=true&w=majority?authSource=admin";
+  "mongodb://localhost:27017/testAngularckc";
 
 const PORT = 4100;
 const httpsOptions = {
@@ -27,7 +27,6 @@ const io = new ioServer(server);
 //#endregion
 
 // Connect with MongoDB
-// mongoose.connect("mongodb://127.0.0.1:27017/ttth", {
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useFindAndModify: false,

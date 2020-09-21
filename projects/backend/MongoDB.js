@@ -1,6 +1,5 @@
 const MongoClient = require("mongodb").MongoClient;
-const url =
-  "mongodb://ai_noi_mongo_die:khongthechetduoc@103.92.26.177:27017/devAngular?retryWrites=true&w=majority?authSource=admin";
+const url = "mongodb://localhost:27017/testAngularckc";
 
 class MongoDB {
   constructor() {
@@ -9,7 +8,7 @@ class MongoDB {
   }
 
   async connectDB() {
-    let dbName = "devAngular";
+    let dbName = "testAngularckc";
     try {
       if (!this.dbClose) {
         const connectRs = await MongoClient.connect(url, {
